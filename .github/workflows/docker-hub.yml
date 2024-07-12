@@ -3,7 +3,7 @@ name: Build and push Enketo Express image to Docker Hub
 on:
     push:
         tags:
-            - '*'
+            - '^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$'
 
 env:
     REGISTRY: docker.io
