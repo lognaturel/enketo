@@ -1,6 +1,9 @@
 name: Build and push Enketo Express image to Docker Hub
 
-on: push
+on:
+    push:
+        tags:
+            - '*'
 
 env:
     REGISTRY: docker.io
